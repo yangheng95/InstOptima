@@ -1,0 +1,70 @@
+# -*- coding: utf-8 -*-
+# file: instruction.py
+# time: 11:40 12/05/2023
+# author: YANG, HENG <hy345@exeter.ac.uk> (杨恒)
+# github: https://github.com/yangheng95
+# huggingface: https://huggingface.co/yangheng
+# google scholar: https://scholar.google.com/citations?user=NPq5a_0AAAAJ&hl=en
+# Copyright (C) 2019-2023. All Rights Reserved.
+
+
+class Instruction:
+    def __init__(self, bos_instruction=None, eos_instruction=None):
+        self.bos_instruction = bos_instruction
+        self.eos_instruction = eos_instruction
+
+    def set_instruction(self, bos_instruction, eos_instruction):
+        self.bos_instruction = bos_instruction
+        self.eos_instruction = eos_instruction
+
+    def get_instruction(self):
+        return self.bos_instruction, self.eos_instruction
+
+
+class NLIInstruction(Instruction):
+    def __init__(
+        self, bos_instruction=None, example=None, eos_instruction=''
+    ):
+        super().__init__(bos_instruction, eos_instruction)
+        self.eos_instruction = eos_instruction
+
+        if bos_instruction is None:
+            bos_instruction = ''
+
+        if example is None:
+            example = ''
+
+        self.bos_instruction = bos_instruction
+        self.example = example
+
+    def __str__(self):
+        return (
+            self.bos_instruction
+            + "\n"
+            + self.example
+            + "\n[The input example here]\n"
+            + self.eos_instruction
+        )
+
+    def __len__(self):
+        return len(self.bos_instruction) + len(self.example) + len(self.eos_instruction)
+
+    def __repr__(self):
+        return (
+            self.bos_instruction
+            + "\n"
+            + self.example
+            + "\n[The input example here]\n"
+            + self.eos_instruction
+        )
+
+    def prepare_input(self, input_text):
+        return (
+            self.bos_instruction
+            + "\n"
+            + self.example
+            + "\ninput: "
+            + input_text
+            + "\n"
+            + self.eos_instruction
+        )
