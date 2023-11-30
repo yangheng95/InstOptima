@@ -1,7 +1,7 @@
 # Evolutionary Multi-objective Instruction Optimization via LLM
 
 This repo is for our
-EMNLP Findings short paper: [Evolutionary Multi-objective Instruction Optimization via Large Language Model-based Instruction Operators](https://arxiv.org/abs/2310.17630).
+EMNLP2023 short paper (Findings): [InstOptima: Evolutionary Multi-objective Instruction Optimization via Large Language Model-based Instruction Operators](https://arxiv.org/abs/2310.17630).
 
 ## Abstract
 
@@ -60,7 +60,7 @@ in the current directory.
 
 ### ABSA Example
 
-For ABSA task, please revise the config in the `main.py` file and run the following command:
+For the ABSA task, please revise the config in the `main.py` file and run the following command:
 
 ```bash
 python main.py
@@ -75,7 +75,7 @@ questions, please feel free to contact us.
 
 ```bibtex
 @inproceedings{
-anonymous2023instoptima,
+YangL23,
 title={InstOptima: Evolutionary Multi-objective Instruction Optimization via Large Language Model-based Instruction Operators},
 author={Heng Yang and Ke Li},
 booktitle={The 2023 Conference on Empirical Methods in Natural Language Processing},
