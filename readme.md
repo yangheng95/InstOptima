@@ -1,7 +1,7 @@
 # Evolutionary Multi-objective Instruction Optimization via LLM
 
 This repo is for our
-paper: [Evolutionary Multi-objective Instruction Optimization via Large Language Model-based Instruction Operators](https://arxiv.org/abs/2310.17630).
+EMNLP Findings short paper: [Evolutionary Multi-objective Instruction Optimization via Large Language Model-based Instruction Operators](https://arxiv.org/abs/2310.17630).
 
 ## Abstract
 
