@@ -77,7 +77,7 @@ questions, please feel free to contact us.
 @inproceedings{
 anonymous2023instoptima,
 title={InstOptima: Evolutionary Multi-objective Instruction Optimization via Large Language Model-based Instruction Operators},
-author={Anonymous},
+author={Heng Yang and Ke Li},
 booktitle={The 2023 Conference on Empirical Methods in Natural Language Processing},
 year={2023},
 url={https://openreview.net/forum?id=8oy8hUeem9}
