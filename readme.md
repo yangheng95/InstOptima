@@ -74,12 +74,20 @@ questions, please feel free to contact us.
 ## Citation
 
 ```bibtex
-@inproceedings{
-YangL23,
-title={InstOptima: Evolutionary Multi-objective Instruction Optimization via Large Language Model-based Instruction Operators},
-author={Heng Yang and Ke Li},
-booktitle={The 2023 Conference on Empirical Methods in Natural Language Processing},
-year={2023},
-url={https://openreview.net/forum?id=8oy8hUeem9}
+@inproceedings{YangL23instoptima,
+    title = "{I}nst{O}ptima: Evolutionary Multi-objective Instruction Optimization via Large Language Model-based Instruction Operators",
+    author = "Yang, Heng  and
+      Li, Ke",
+    editor = "Bouamor, Houda  and
+      Pino, Juan  and
+      Bali, Kalika",
+    booktitle = "Findings of the Association for Computational Linguistics: EMNLP 2023",
+    month = dec,
+    year = "2023",
+    address = "Singapore",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2023.findings-emnlp.907",
+    pages = "13593--13602",
+    abstract = "Instruction-based language modeling has received significant attention in pretrained language models. However, the efficiency of instruction engineering remains low and hinders the development of instruction studies. Recent studies have focused on automating instruction generation, but they primarily aim to improve performance without considering other crucial objectives that impact instruction quality, such as instruction length and perplexity. Therefore, we propose a novel approach (i.e., InstOptima) that treats instruction generation as an evolutionary multi-objective optimization problem. In contrast to text edition-based methods, our approach utilizes a large language model (LLM) to simulate instruction operators, including mutation and crossover. Furthermore, we introduce an objective-guided mechanism for these operators, allowing the LLM to comprehend the objectives and enhance the quality of the generated instructions. Experimental results demonstrate improved fine-tuning performance and the generation of a diverse set of high-quality instructions.",
 }
 ```
