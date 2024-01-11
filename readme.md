@@ -1,7 +1,7 @@
 # Evolutionary Multi-objective Instruction Optimization via LLM
 
 This repo is for our
-EMNLP2023 short paper (Findings): [InstOptima: Evolutionary Multi-objective Instruction Optimization via Large Language Model-based Instruction Operators](https://arxiv.org/abs/2310.17630).
+EMNLP2023 Findings paper: [InstOptima: Evolutionary Multi-objective Instruction Optimization via Large Language Model-based Instruction Operators](https://arxiv.org/abs/2310.17630).
 
 ## Abstract
 
